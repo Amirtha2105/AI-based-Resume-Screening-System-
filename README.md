@@ -55,37 +55,69 @@ Manually reviewing thousands of resumes is time-consuming and inefficient. This 
 
 AI_based_resume_screening_system/
 │
-├── data/
-│   ├── Resume.csv                   # Original dataset
-│   ├── features.pkl                 # TF-IDF features
-│   ├── labels.pkl                   # Labels for TF-IDF
-│   ├── bert_features.pkl            # BERT-based features
-│   ├── bert_labels.pkl              # Labels for BERT
-│
-├── models/
-│   ├── tfidf_vectorizer.pkl         # TF-IDF vectorizer object
-│   ├── naive_bayes_model.pkl        # Trained Naive Bayes model
-│   ├── logistic_regression_model.pkl# Trained Logistic Regression (TF-IDF)
-│   ├── linear_svm_model.pkl         # Trained Linear SVM
-│   ├── bert_logistic_model.pkl      # Trained BERT + Logistic Regression
-│
-├── bert_model/                      # BERT is downloaded locally
-│   ├── config.json
-│   ├── pytorch_model.bin
-│   ├── tokenizer.json
-│   ├── tokenizer_config.json
-│   ├── vocab.txt
-│   ├── sentence_bert_config.json
-│
-├── streamlit_app/
-│   └── streamlit.py                       # Streamlit frontend for resume screening
-│
-├── notebooks/  
-    └── vectorize.py                     # Week 1: Preprocessing + TF-IDF vectorizer
-├── model.py                         # Week 2: Training + Evaluation (TF-IDF models)
-├── bert_vectorize.py                # Week 3: BERT embedding + model training
-├── AI_Resume_Screener_DemoDeck.pptx # Week 4: Presentation file for demo
-│
-├── requirements.txt                 # (Optional) Python packages list
-└── README.md                        # (Optional) Project overview for GitHub
 
+
+├── data/
+
+│   ├── Resume.csv                   # Original dataset
+
+│   ├── features.pkl                 # TF-IDF features
+
+│   ├── labels.pkl                   # Labels for TF-IDF
+
+│   ├── bert_features.pkl            # BERT-based features
+
+│   ├── bert_labels.pkl              # Labels for BERT
+
+│
+
+├── models/
+
+│   ├── tfidf_vectorizer.pkl         # TF-IDF vectorizer object
+
+│   ├── naive_bayes_model.pkl        # Trained Naive Bayes model
+
+│   ├── logistic_regression_model.pkl# Trained Logistic Regression (TF-IDF)
+
+│   ├── linear_svm_model.pkl         # Trained Linear SVM
+
+│   ├── bert_logistic_model.pkl      # Trained BERT + Logistic Regression
+
+│
+
+├── bert_model/                      # BERT is downloaded locally
+
+│   ├── config.json
+
+│   ├── pytorch_model.bin
+
+│   ├── tokenizer.json
+
+│   ├── tokenizer_config.json
+
+│   ├── vocab.txt
+
+│   ├── sentence_bert_config.json
+
+│
+
+├── streamlit_app/
+
+│   └── streamlit.py                       # Streamlit frontend for resume screening
+
+│
+
+├── notebooks/  
+
+│   └── vectorize.py                     # Week 1: Preprocessing + TF-IDF vectorizer
+
+├── 
+model.py                         # Week 2: Training + Evaluation (TF-IDF models)
+
+├── bert_vectorize.py                # Week 3: BERT embedding + model training
+
+├── AI_Resume_Screener_DemoDeck.pptx # Week 4: Presentation file for demo
+
+│
+
+└── README.md                        # Project overview for GitHub
